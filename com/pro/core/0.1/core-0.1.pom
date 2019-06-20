@@ -15,6 +15,8 @@
         <asm.version>7.0</asm.version>
         <poi.version>3.17</poi.version>
         <pinyin4j.version>2.5.1</pinyin4j.version>
+        <mybatis.version>3.4.6</mybatis.version>
+        <jedis.version>2.9.0</jedis.version>
         <jsoup.version>1.11.3</jsoup.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <jackson.version>2.9.7</jackson.version>
@@ -54,6 +56,21 @@
             <version>${javax.version}</version>
             <optional>true</optional>
         </dependency>
+
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>${mybatis.version}</version>
+            <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>${jedis.version}</version>
+            <optional>true</optional>
+        </dependency>
+
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-annotations</artifactId>
