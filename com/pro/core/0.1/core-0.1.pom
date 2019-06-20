@@ -120,11 +120,17 @@
             <version>${pinyin4j.version}</version>
             <optional>true</optional>
         </dependency>
-
     </dependencies>
 
     <repositories>
-
+        <repository>
+            <id>spring-milestones</id>
+            <name>Spring Milestones</name>
+            <url>https://repo.spring.io/milestone</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
 
     </repositories>
 
@@ -141,7 +147,7 @@
                 <version>2.8.1</version>
                 <configuration>
                     <altDeploymentRepository>
-                        internal.repo::default::file://${project.build.directory}/mvn-repo
+                        internal.repo::default::file://${project.build.directory}/maven-repo
                     </altDeploymentRepository>
                 </configuration>
             </plugin>
@@ -153,7 +159,7 @@
                 <configuration>
                     <message>Maven artifacts for ${project.version}</message>
                     <noJekyll>true</noJekyll>
-                    <outputDirectory>${project.build.directory}/mvn-repo</outputDirectory>
+                    <outputDirectory>${project.build.directory}/maven-repo</outputDirectory>
                     <branch>refs/heads/master</branch>
                     <includes>
                         <include>**/*</include>
