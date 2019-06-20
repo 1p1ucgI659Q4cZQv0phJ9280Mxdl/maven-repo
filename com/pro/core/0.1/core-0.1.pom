@@ -21,7 +21,6 @@
         <javax.version>8.0</javax.version>
         <spring.version>5.1.7.RELEASE</spring.version>
         <optional>true</optional>
-        <spring.boot.version>2.1.5.RELEASE</spring.boot.version>
         <github.global.server>github</github.global.server>
     </properties>
 
@@ -131,7 +130,6 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
-
     </repositories>
 
     <build>
